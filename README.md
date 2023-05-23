@@ -16,3 +16,9 @@ alertmanager-service.yaml
 
 kube-prometheus ⇨ manifests
 kubectl apply -f .
+
+## 步驟四: (查看SVC連線端口)
+    kubectl get svc -n monitoring
+prometheus-k8s 9090:(NodePort)
+grafana 3000:(NodePort)
+alertmanager-main 9093:(NodePort)
