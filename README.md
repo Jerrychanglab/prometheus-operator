@@ -1,5 +1,5 @@
 # Prometheus-Operator (Install Teaching)
-
+## 說明: 為什麼需要Prometheus Operator監控呢，因現在K8s環境的複雜(Service、Pod、Node...等)，都需要一個完整的監控來了解目前環境的狀況與驗屍動作。但傳統的Prometheus在建置上需要一定的門檻，故透過Operator方式進行包裝，達到快速部署使用目的。
 ## 步驟一: (下載CoreOS團隊開發的套件包)
     git clone https://github.com/coreos/kube-prometheus.git 
 ## 步驟二: (擴展**CustomResourceDefinition**)
