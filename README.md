@@ -50,7 +50,8 @@ kube-prometheus ⇨ manifests
     kubectl get svc -n monitoring
 ### 需確認以下三個NodePort端口
 例:
-![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/e4310ce4-6ad6-4c34-a978-ad488189a000)
+
+![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/b5ef8645-6ff7-4fb1-9b29-2b8482c6390b)
 * prometheus-k8s 
 * grafana
 * alertmanager-main
