@@ -30,14 +30,22 @@ kube-prometheus ⇨ manifests
 ## 步驟五: (檢查)
     kubectl get pod -n monitoring
 備註: 查看是否有以下幾個Pod是否狀態正常
-alertmanager-main
-blackbox-exporter
-grafana
-kube-state-metrics
-node-exporter
-prometheus-adapter
-prometheus-k8s
-prometheus-operator
+* alertmanager-main : 負責
+
+* blackbox-exporter
+
+* grafana
+
+* kube-state-metrics
+
+* node-exporter
+
+* prometheus-adapter
+
+* prometheus-k8s
+
+* prometheus-operator
+
 ## 步驟六: (查看SVC連線端口)
     kubectl get svc -n monitoring
 prometheus-k8s 9090:(NodePort)
