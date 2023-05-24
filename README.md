@@ -21,15 +21,24 @@ kube-prometheus ⇨ manifests
 
 例:
 ![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/aff386df-cd4a-472e-8f75-cc7d16884149)  
-## 步驟四: (prometheus-operator部署)
+
+## 步驟四: (儲存prometheus data)
 ### 資料夾位置
 kube-prometheus ⇨ manifests
 ### 新增prometheus-PersistentVolumes.yaml
+#### 用途:常態儲存prometheus data，如k8s結構崩潰，還可重新將資料抓取回來。    
+![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/dee54d85-58b9-4f0b-a470-90e4800c1456)
+### 修改prometheus-prometheus.yaml
+![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/d1e41811-69ac-4b3b-952b-d6abd5e00e39)
 
+## 步驟五: (prometheus-operator部署)
+### 資料夾位置
+kube-prometheus ⇨ manifests
+### 新增prometheus
 ### 執行項目 (部署)
     kubectl apply -f .
 
-## 步驟五: (檢查)
+## 步驟六: (檢查)
     kubectl get pod -n monitoring
 備註: 查看是否有以下幾個Pod是否狀態正常
 * alertmanager-main : 接收來自Prometheus Server的告警，並進行處理。
@@ -48,7 +57,7 @@ kube-prometheus ⇨ manifests
 
 * prometheus-operator : 管理組件並根據，Prometheus Operator 的自定義資源定義（Custom Resource Definitions，CRDs）來創建和管理 Prometheus、Alertmanager、ServiceMonitor 等資源。
 
-## 步驟六: (連線端口與頁面檢查)
+## 步驟七: (連線端口與頁面檢查)
     kubectl get svc -n monitoring
 ### 需確認以下三個NodePort端口
 例:
