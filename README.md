@@ -22,11 +22,11 @@ kube-prometheus ⇨ manifests
 例:
 ![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/aff386df-cd4a-472e-8f75-cc7d16884149)  
 
-## 步驟四: (儲存prometheus data)
+## 步驟四: (prometheus data常態儲存) (如沒此需求可略過)
+### 用途:常態儲存prometheus data，如k8s結構崩潰，還可重新將資料抓取回來。
 ### 資料夾位置
 kube-prometheus ⇨ manifests
-### 新增prometheus-PersistentVolumes.yaml
-#### 用途:常態儲存prometheus data，如k8s結構崩潰，還可重新將資料抓取回來。    
+### 新增prometheus-PersistentVolumes.yaml  
 ![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/dee54d85-58b9-4f0b-a470-90e4800c1456)
 ### 修改prometheus-prometheus.yaml
 ![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/d1e41811-69ac-4b3b-952b-d6abd5e00e39)
