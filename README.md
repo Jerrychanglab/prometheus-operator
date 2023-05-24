@@ -1,4 +1,4 @@
-# prometheus-operator (安專教學)
+# prometheus-operator (Install Teaching)
 
 ## 步驟一: (下載CoreOS團隊開發的套件包)
     git clone https://github.com/coreos/kube-prometheus.git 
