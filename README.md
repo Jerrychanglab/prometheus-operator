@@ -27,15 +27,16 @@ kube-prometheus ⇨ manifests
 ### 用途:常態儲存prometheus data，如k8s結構崩潰，還可重新將資料抓取回來。
 ### 資料夾位置
 kube-prometheus ⇨ manifests
-### 新增prometheus-PersistentVolumes.yaml  
+### 新增 prometheus-PersistentVolumes.yaml
 ![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/dee54d85-58b9-4f0b-a470-90e4800c1456)
-### 修改prometheus-prometheus.yaml
+#### 備註: 因prometheus-prometheus.yaml的replicas = 2，PV需建置兩個，可以clone prometheus-PersistentVolumes.yaml修改Metadata: name即可。
+![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/63051beb-f9ff-4ce9-9d79-ba76f6db00b4)
+### 修改 prometheus-prometheus.yaml
 ![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/d1e41811-69ac-4b3b-952b-d6abd5e00e39)
 
 ## 步驟五: (prometheus-operator部署)
 ### 資料夾位置
 kube-prometheus ⇨ manifests
-### 新增prometheus
 ### 執行項目 (部署)
     kubectl apply -f .
 
