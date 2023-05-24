@@ -8,11 +8,10 @@
 kube-prometheus ⇨ manifests ⇨ setup 
 ### 執行指令
     kubectl apply -f .
-    
-備註: 如有看到long: must have at most 262144 bytes 字樣的Error，請改用
 ![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/05253bce-f9ae-47dc-b04a-771de971fe9a)
+備註: 如有看到long: must have at most 262144 bytes 字樣的Error，請改用
 
-    kubectl create -f X.yaml 建置
+    kubectl create -f <name>.yaml 建置
 ## 步驟三: (調整Yaml)
 ### 資料夾位置
 kube-prometheus ⇨ manifests
