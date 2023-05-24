@@ -24,6 +24,8 @@ kube-prometheus ⇨ manifests
 ## 步驟四: (prometheus-operator部署)
 ### 資料夾位置
 kube-prometheus ⇨ manifests
+### 新增prometheus-PersistentVolumes.yaml
+
 ### 執行項目 (部署)
     kubectl apply -f .
 
