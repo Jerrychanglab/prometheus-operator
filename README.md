@@ -1,6 +1,5 @@
 # Prometheus-Operator (Install Teaching)
-## 說明: 為什麼需要Prometheus Operator監控呢，現在的K8s環境的錯綜複雜，每個相關服務都需要一個完整的監控來了解目前環境的狀況(Service、Node、Pod...等)，並且當問題發生時，能採用數據做驗屍動作，故監控K8s元件是一個非常最要的事情。
-並且做HPA(Autoscaler)需求時，Prometheus可提供Metrics指標。
+## 說明: 為什麼需要Prometheus Operator監控呢，現在的K8s環境的錯綜複雜，每個相關服務都需要一個完整的監控來了解目前環境的狀況(Service、Node、Pod...等)，並且當問題發生時，能採用數據做驗屍動作，故監控K8s元件是一個非常最要的事情。並且做HPA(Autoscaler)需求時，Prometheus可提供Metrics指標。
 ### 參考文獻: https://github.com/prometheus-operator/kube-prometheus
 ## 步驟一: (下載套件包)
     git clone https://github.com/coreos/kube-prometheus.git 
