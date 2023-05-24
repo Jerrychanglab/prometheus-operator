@@ -30,9 +30,9 @@ kube-prometheus ⇨ manifests
 ## 步驟五: (檢查)
     kubectl get pod -n monitoring
 備註: 查看是否有以下幾個Pod是否狀態正常
-* alertmanager-main : 負責
+* alertmanager-main : 接收來自Prometheus Server的告警，並進行處理。
 
-* blackbox-exporter
+* blackbox-exporter : 偵測網路服務目標功能(HTTP、DNS、TCP...)，並提供給Prometheus相關監控數據。
 
 * grafana
 
