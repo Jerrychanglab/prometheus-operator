@@ -32,19 +32,19 @@ kube-prometheus ⇨ manifests
 備註: 查看是否有以下幾個Pod是否狀態正常
 * alertmanager-main : 接收來自Prometheus Server的告警，並進行處理。
 
-* blackbox-exporter : 偵測網路服務目標功能(HTTP、DNS、TCP...)，並提供給Prometheus相關監控數據。
+* blackbox-exporter : 偵測網路服務目標功能(HTTP、DNS、TCP...)，並提供給Prometheus監控數據。
 
-* grafana
+* grafana : 抽取Prometheus的數據，提供客製化繪圖呈現。
 
-* kube-state-metrics
+* kube-state-metrics : 
 
-* node-exporter
+* node-exporter : 收集每個k8s Node上的CPU、記憶體、網路流量...使用率指標，提供給Prometheus監控數據。
 
-* prometheus-adapter
+* prometheus-adapter : 監控Pod的資源使用指標，提供給HPA(Autoscaler)使用。
 
-* prometheus-k8s
+* prometheus-k8s : 監聽Kubernetes API Server，根據配置的監控目標（如 Service、Pod、Node)定期抓取指標數據，並將其存儲在本地的時間序列數據庫中。
 
-* prometheus-operator
+* prometheus-operator : 管理組件並根據，Prometheus Operator 的自定義資源定義（Custom Resource Definitions，CRDs）來創建和管理 Prometheus、Alertmanager、ServiceMonitor 等資源。
 
 ## 步驟六: (查看SVC連線端口)
     kubectl get svc -n monitoring
