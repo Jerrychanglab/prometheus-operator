@@ -48,6 +48,9 @@ kube-prometheus ⇨ manifests
 
 ## 步驟六: (查看SVC連線端口)
     kubectl get svc -n monitoring
-prometheus-k8s 9090:(NodePort)
-grafana 3000:(NodePort)
-alertmanager-main 9093:(NodePort)
+### 需確認以下三個NodePort端口
+* prometheus-k8s : 
+![image](https://github.com/Jerrychanglab/prometheus-operator/assets/39659664/e4310ce4-6ad6-4c34-a978-ad488189a000)
+* prometheus-k8s 9090:(NodePort
+* grafana 3000:(NodePort)
+* alertmanager-main 9093:(NodePort)
